@@ -1,0 +1,14 @@
+<h1> Lettered Box Game</h1>
+
+<input #userinput (keyup.enter)="onEnter(userinput.value)">
+    <p>{{username}}</p>
+
+<div #game>
+  <p>
+    {{letters}}
+  </p>
+</div>
+
+<p>
+  <button (click)="join()">Join Game</button>
+</p>
